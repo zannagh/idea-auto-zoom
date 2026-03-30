@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>de.zannagh.idea.autozoom</id>
+    <name>JetBrains IDEA Auto Zoom</name>
+    <vendor>Zannagh</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <description><![CDATA[
+    Automatically adjusts the IDE zoom level based on the current display.
+    <br/><br/>
+    When you move the IDE window between screens (e.g. laptop ↔ external monitor),
+    the plugin detects the display change and restores the zoom level you previously
+    used on that screen. Zoom changes are saved automatically per display.
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="de.zannagh.idea.autozoom.AutoZoomStartupActivity"/>
+        <applicationConfigurable
+                parentId="appearance"
+                instance="de.zannagh.idea.autozoom.AutoZoomConfigurable"
+                id="de.zannagh.idea.autozoom.AutoZoomConfigurable"
+                displayName="Auto Zoom"/>
+    </extensions>
+</idea-plugin>
