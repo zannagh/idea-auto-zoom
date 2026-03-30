@@ -1,8 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Documentation
-    url: https://github.com/JetBrains/intellij-platform-plugin-template
+    url: https://github.com/zannagh/idea-auto-zoom
     about: Check the README file in the first place.
-  - name: Getting Help
-    url: https://plugins.jetbrains.com/docs/intellij/getting-help.html
-    about: Check if you search for a help in plugin development.
